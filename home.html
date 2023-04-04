@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Principal</title>
+
+    <!-- link a font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
+
+    <!-- link a google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Tilt+Warp&display=swap" rel="stylesheet" />
+
+    <!-- link a bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- link a mi css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav_container">
+          <img src="./img/logo_junco.png" class="nav_logo" />
+          <label for="menu" class="nav_label">
+            <i class="fa-sharp fa-solid fa-bars logo_menu"></i>
+          </label>
+          <input type="checkbox" id="menu" class="nav_input" />
+
+          <div class="nav_menu">
+            <li><a href="./index.html" class="nav_item">Inicio</a></li>
+            <li><a href="./pages/equipo.html" class="nav_item">Equipo</a></li>
+            <li>
+              <a href="./pages/calendario.html" class="nav_item">Calendario</a>
+            </li>
+            <li><a href="./pages/tienda.html" class="nav_item">Tienda</a></li>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <button onclick="verificarEdad()">Soy mayor de edad</button>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/auto.jpg" class="d-block w-100" alt="auto" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/auto2.jpg" class="d-block w-100" alt="auto" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/auto5.jpg" class="d-block w-100" alt="auto" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <section>
+        <h2 class="noticias">NOTICIAS</h2>
+        <div class="noticia_caja1">
+          <article class="caja_noticias">
+            <img src="./img/aguus.jpg" class="img_noticia" alt="Agustín Canapino" />
+            <a
+              class="div_noticias"
+              href="https://www.ole.com.ar/autos/canapino-ovalo-texas-tiempos-pruebas-novatos-ricardo-juncos-declaraciones_0_5u8fuYbS5X.html"
+              target="_blank"
+              ><p class="p_noticias">Canapino en el óvalo de Texas</p></a
+            >
+          </article>
+        </div>
+        <div class="noticia_caja1">
+          <article class="caja_noticias">
+            <img src="./img/juncoos.jpg" class="img_noticia" alt="Ricardo Juncos" />
+            <a
+              class="div_noticias"
+              href="https://www.lanacion.com.ar/deportes/automovilismo/ricardo-juncos-el-ingeniero-argentino-que-cumple-el-sueno-americano-en-indycar-nid02032023/"
+              target="_blank"
+              ><p class="p_noticias">El ingeniero argentino en el IndyCar</p></a
+            >
+          </article>
+        </div>
+
+        <article class="caja_formulario">
+          <h2 class="formulario">Querés formar parte de nuestro equipo?</h2>
+          <img src="./img/equipo.jpg" alt="Equipo JuncosHollingerRacing" class="img_formulario" />
+          <button class="boton_formulario">
+            <a href="./pages/formulario.html" target="_blank" class="link_formulario">Más info</a>
+          </button>
+        </article>
+      </section>
+
+      <!-- CAJA VERDE CON FRASE -->
+      <div class="caja">
+        <h2 class="frase_principal">EL <span class="color_palabra"> PODER </span> DE LAS POSIBILIDADES</h2>
+        <h4 class="frase_secundaria">
+          Somos el equipo que se atreve a soñar, que se atreve a ser diferente y a forjar un nuevo camino.
+        </h4>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="footer_container">
+        <h3 class="fuente_subtitulo">Seguinos en nuestras redes</h3>
+
+        <div class="footer_">
+          <a href="https://www.instagram.com/juncoshollinger/" class="fuente_titulo" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/JuncosHollingerRacing/?locale=es_LA" class="fuente_titulo" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://www.youtube.com/@JuncosHollingerRacing" class="fuente_titulo" target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a
+            href="https://twitter.com/juncoshollinger?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            class="fuente_titulo"
+            target="_blank"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </div>
+        <p>&copy; 2023 Juncos Hollinger Racing Inc. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- pa que funcione el bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
